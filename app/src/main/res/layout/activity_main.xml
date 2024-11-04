@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        android:background="#008577"
+        android:gravity="center"
+        android:text="Proyecto 009. Eleccion de color. RadioGroup &amp; Toast"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/radioButtonRojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rojo"
+            android:textSize="18sp"
+            app:buttonTint="@color/rojo_radio"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButtonVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verde"
+            android:textSize="18sp"
+            app:buttonTint="@color/verde_radio"/>
+
+
+        <RadioButton
+            android:id="@+id/radioButtonAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Azul"
+            android:textSize="18sp"
+            app:buttonTint="@color/azul_radio"/>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
